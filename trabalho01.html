@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HABIT — Categoria: Techno</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .category-header { margin-bottom: var(--space-lg); }
+    .category-header h1 { font-size: 2rem; margin-bottom: var(--space-sm); }
+
+    .filter-tags { display: flex; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-xl); }
+
+    .posts-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+      margin-bottom: var(--space-xl);
+    }
+
+    .post-card { border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; transition: box-shadow .15s; }
+    .post-card:hover { box-shadow: var(--shadow-md); }
+    .post-card__img  { background: #e0e8e8; width: 100%; aspect-ratio: 4/3; }
+    .post-card__body { padding: var(--space-md); }
+    .post-card__title { font-size: var(--text-small); font-weight: 700; margin-bottom: var(--space-xs); }
+    .post-card__date  { font-size: var(--text-xs); color: var(--color-text-muted); }
+
+    .load-more { text-align: center; margin-bottom: var(--space-xl); }
+
+    @media (min-width: 481px) { .posts-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 768px) { .posts-grid { grid-template-columns: repeat(3, 1fr); } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar" aria-label="Navegação principal">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__brand">HABIT</a>
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="listagem.html">Páginas</a></li>
+          <li><a href="destaques.html">Destaques</a></li>
+          <li><a href="assinar.html">Assinar</a></li>
+          <li><a href="admin-categorias.html" class="nav--admin">Admin</a></li>
+        </ul>
+        <div class="navbar__search">
+          <label for="search-list" class="sr-only">Buscar conteúdo</label>
+          <input id="search-list" type="search" placeholder="Buscar..." />
+          <a href="busca.html" class="btn btn--outline">Buscar</a>
+          <a href="entrar.html" class="btn btn--outline">Entrar</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-content">
+
+        <header class="category-header">
+          <h1>Categoria: Techno</h1>
+          <nav class="filter-tags" aria-label="Filtros da categoria">
+            <a href="#" class="tag tag--active" aria-current="true">Popular</a>
+            <a href="#" class="tag">Mais recentes</a>
+            <a href="#" class="tag">IA</a>
+            <a href="#" class="tag">Produtividade</a>
+          </nav>
+        </header>
+
+        <section aria-label="Lista de postagens">
+          <div class="posts-grid">
+            <article class="post-card">
+              <div class="post-card__img" role="img" aria-label="Imagem da postagem 1"></div>
+              <div class="post-card__body">
+                <h2 class="post-card__title">Título da Postagem 1</h2>
+                <p class="post-card__date">31 Jul 2025</p>
+              </div>
+            </article>
+            <article class="post-card">
+              <div class="post-card__img" role="img" aria-label="Imagem da postagem 2"></div>
+              <div class="post-card__body">
+                <h2 class="post-card__title">Título da Postagem 2</h2>
+                <p class="post-card__date">31 Jul 2025</p>
+              </div>
+            </article>
+            <article class="post-card">
+              <div class="post-card__img" role="img" aria-label="Imagem da postagem 3"></div>
+              <div class="post-card__body">
+                <h2 class="post-card__title">Título da Postagem 3</h2>
+                <p class="post-card__date">31 Jul 2025</p>
+              </div>
+            </article>
+            <article class="post-card">
+              <div class="post-card__img" role="img" aria-label="Imagem da postagem 4"></div>
+              <div class="post-card__body">
+                <h2 class="post-card__title">Título da Postagem 4</h2>
+                <p class="post-card__date">31 Jul 2025</p>
+              </div>
+            </article>
+            <article class="post-card">
+              <div class="post-card__img" role="img" aria-label="Imagem da postagem 5"></div>
+              <div class="post-card__body">
+                <h2 class="post-card__title">Título da Postagem 5</h2>
+                <p class="post-card__date">31 Jul 2025</p>
+              </div>
+            </article>
+            <article class="post-card">
+              <div class="post-card__img" role="img" aria-label="Imagem da postagem 6"></div>
+              <div class="post-card__body">
+                <h2 class="post-card__title">Título da Postagem 6</h2>
+                <p class="post-card__date">31 Jul 2025</p>
+              </div>
+            </article>
+            <article class="post-card">
+              <div class="post-card__img" role="img" aria-label="Imagem da postagem 7"></div>
+              <div class="post-card__body">
+                <h2 class="post-card__title">Título da Postagem 7</h2>
+                <p class="post-card__date">31 Jul 2025</p>
+              </div>
+            </article>
+            <article class="post-card">
+              <div class="post-card__img" role="img" aria-label="Imagem da postagem 8"></div>
+              <div class="post-card__body">
+                <h2 class="post-card__title">Título da Postagem 8</h2>
+                <p class="post-card__date">31 Jul 2025</p>
+              </div>
+            </article>
+            <article class="post-card">
+              <div class="post-card__img" role="img" aria-label="Imagem da postagem 9"></div>
+              <div class="post-card__body">
+                <h2 class="post-card__title">Título da Postagem 9</h2>
+                <p class="post-card__date">31 Jul 2025</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="load-more">
+            <button class="btn btn--outline" type="button">Carregar mais</button>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer__links" aria-label="Links do rodapé">
+        <a href="#">Instagram</a><a href="#">Work</a><a href="#">Bags</a><a href="#">Lamp</a><a href="#">Books</a>
+      </nav>
+      <p class="footer__copy">© 2025 Meu Site • <a href="#">Meu site</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
